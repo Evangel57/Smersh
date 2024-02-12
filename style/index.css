@@ -9,7 +9,7 @@
 
 
 .block {
-    font-size: 0.5em;
+    font-size: 0.8em;
     color: white;
     opacity: 0;
     padding: 10px;
@@ -28,7 +28,7 @@
 
 .logo{
     width: 100%;
-    max-width: 200px;
+    max-width: 400px;
 }
 
 .logo-container{
@@ -49,7 +49,7 @@
     background-color: black
 }
 .section-container {
-    max-width: 500px;
+    max-width: 800px;
     margin: auto;
     padding: 10px;
 }
@@ -58,21 +58,19 @@
 }
 .btn-container{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 
     border-bottom: 1.2px solid rgba(255, 255, 255, 0.616);
 }
-.btn-container p{
-    color: rgba(255, 255, 255, 0.616);
-    font-size: 2em;
-    line-height: 1em;
 
-}
 .btn-container button{
+    letter-spacing: 0.1em;
+
     /* width: 40%; */
     width: 100px;
-    padding: 0.8em 1em;
-    font-size: 0.5em;
+    text-transform: uppercase;
+    padding: 0.8em 2em;
+    font-size: 1em;
 
     color: white;
     border: none;
