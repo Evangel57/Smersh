@@ -11,6 +11,12 @@
     border-bottom: 1px solid rgb(222, 222, 222);
     padding: 20px 0;
 }
+.mini-icon{
+    height: 1em;
+    vertical-align: middle;
+    margin-right: 8px;
+    width: 10px;
+}
 
 .describtion {
     margin: 2em 0;
@@ -20,17 +26,29 @@
     
 }
 .img-card{
-    width: 70%;
-    max-width: 500px;
+    border: 1px solid rgba(229, 229, 229, 0.714);
+    border-radius: 20px;
+    margin: 0 10px;
+    height: 400px;
 }
-.about-product{
-    -webkit-transition-duration: 0s;
-    -o-transition-duration: 0s;
-    -moz-transition-duration: 0s;
-    transition-duration: 0s;
 
+.photo-slider{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    overflow-x: auto;
+    white-space: nowrap; /* Позволяет изображениям быть на одной строке */
+    width: 100%;
+}
+
+.about-product{
+    margin-top: 10px;
     opacity: 0;
     transform: translateY(100%);
+}
+.img-clothes{
+    width: 100%;
+    overflow: hidden;
 }
 .img-clothes:hover  .about-product{
     opacity: 1;
@@ -47,8 +65,11 @@
 .btn-border:hover {
     background-color: black;
     color: white;
-
 }
+.btn-border:hover .mini-icon{
+    filter: invert(100%);
+}
+
 @media screen and (max-width: 768px) {
     .about-product {
         opacity: 1;
